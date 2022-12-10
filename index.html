@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='responsive' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/intlTelInput.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+ 
+
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .bg_card {
+        width: 500px;
+        height: auto;
+        margin: auto;
+    }
+    @media screen and (max-width:500px)
+    {
+        .bg_card{
+            width: 100%;
+        }
+    }
+
+    .bg_logo {
+        position: absolute;
+        top: 0;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .bg_logo img {
+        width: 78px;
+    }
+
+    .text1 {
+        position: absolute;
+        top: 0;
+        margin-left: 80px;
+        width: 50px;
+        margin-top: 15px;
+    }
+
+    .text1 h1 {
+        font-size: 20px;
+        color: #fff;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .bg_icon {
+    /* position: absolute; */
+    top: 0;
+    color: #fff;
+    float: right;
+    width: 30%;
+    margin-top: -126px;
+    position: relative;
+    margin-right: 68px;
+}
+
+    .icon1 {
+        float: right;
+        margin: 5px;
+        font-size: 35px;
+        margin-top: 8px;
+    }
+
+    .icon2 {
+        float: right;
+        margin: 5px;
+        font-size: 35px;
+        margin-top: 3px;
+    }
+
+    .icon3 {
+        float: right;
+        margin: 5px;
+        font-size: 35px;
+        margin-top: 5px;
+    }
+
+    /*bg_information*/
+    .com1 {
+        float: right;
+        width: 100%;
+    }
+
+    .com1 img {
+    width: 60%;
+    float: right;
+    margin-right: 71px;
+}
+
+    .com2 {
+        float: right;
+        width: 96%;
+    }
+    .com2 img {
+    width: 108%;
+    float: right;
+    /* position: fixed; */
+    margin-top: -3px;
+    margin-right: 50px;
+}
+
+    .bottom {
+        margin-top: -90px;
+        position: absolute;
+    }
+
+    .bottom img {
+        position: absolute;
+
+    }
+
+    .t01 i {
+        float: left;
+        /* padding: 8px; */
+        font-size: 15px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: #09397b;
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .t01 p {
+        float: left;
+        font-size: 14px;
+        margin: 0px;
+        margin-left: 16px;
+
+        color: #000;
+    }
+
+    .t01 {
+        width: 106%;
+        float: left;
+        padding: 10px;
+    }
+
+    .text2 {
+        width: 50%;
+        float: left;
+    }
+
+    .computer01 {
+        width: 46%;
+        float: right;
+        margin-top: -15%;
+    }
+
+    .btn {
+        width: 30%;
+        border-radius: 10px;
+        float: left;
+        border-color: white;
+        margin-left: 30px;
+    }
+
+    .btn h2 {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    .btn img {
+        float: left;
+    }
+
+    .b2 {
+    position: relative;
+    z-index: 99;
+    margin-top: 16%;
+    margin-left: 1%;
+}
+
+    .btn2 {
+        margin-top: -6px;
+        border-radius: 7px;
+        font-size: 13px;
+        padding: 7px 9px;
+        border-color: white;
+    }
+
+    .btn3 {
+        margin-top: 5px;
+        border-radius: 7px;
+        font-size: 19px;
+        padding: 2px 37px;
+        border-color: white;
+    }
+
+    .whatsapp {
+        float: left;
+        margin-top: 15px;
+    }
+
+    a.whatsapp-button {
+        text-decoration: none;
+    }
+
+    .whatsapp-button i {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .whatsapp_no {
+        float: right;
+        margin-top: 8px;
+    }
+
+    .whatsapp-input input {
+        padding: 10px 0px 10px 0px;
+        font-size: 12px;
+        border: 1px solid;
+        width: 250px;
+    }
+
+
+    .whatsapp-button {
+        padding: 10px 22px;
+        font-size: 12px;
+        background-color: #51B14D;
+        opacity: 0.9;
+        color: #fff;
+        border: none;
+        margin-left: 10px;
+    }
+
+    .input-wrapper {
+        float: left;
+    }
+
+    .whatsapp {
+        float: left;
+        margin-top: 15px;
+    }
+
+    a.whatsapp-button {
+        text-decoration: none;
+    }
+
+    .whatsapp-button i {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .whatsapp_no {
+        float: right;
+        margin-top: 5px;
+    }
+
+    .whatsapp-input input {
+        padding: 10px 0px 10px 0px;
+        font-size: 12px;
+        border: 1px solid;
+        width: 300px;
+    }
+
+    .icon3 a {
+        color: #fff;
+    }
+
+    .icon2 a {
+        color: #fff;
+    }
+
+    .icon1 a {
+        color: #fff;
+    }
+
+    .bg_coding {
+        width: 128px;
+    }
+
+    .code {
+        width: 163px;
+    }
+
+    .code img {
+        width: 454px;
+        margin-top: -13px;
+    }
+
+    .text2 ul li i {
+        float: left;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+        background: #09397b;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 30px;
+        color: #fff;
+    }
+
+    .text2 ul li {
+        display: inline-block;
+    }
+
+    .text2 ul {
+        padding: 0px;
+    }
+
+    .text2 ul li a {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 500px;
+        margin-left: 13px;
+        text-decoration: none;
+    }
+
+    p {
+        color: #000;
+        font-size: 13px;
+        margin-left: 17px;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <div class="bg_card">
+            <div class="bg_top">
+                <img src="image2/top1.png">
+                <div class="bg_logo">
+                    <img src="image2/logo1.png">
+                </div>
+                <div class="text1">
+                    <h1>SHIVAM<br>
+                        COMPUTER</h1>
+                </div>
+                <div class="bg_icon">
+                    <div class="icon1"><a
+                            href="https://www.facebook.com/people/Shivam-Computer-Motera/100063594382894/?sk=about"><i
+                                class="fa fa-facebook-square" aria-hidden="true"></a></a></i></div>
+                    <div class="icon2"><a href="https://www.instagram.com/shivamcomputermotera/"><i
+                                class="fa fa-instagram" aria-hidden="true"></a></i></div>
+                    <div class="icon3"> <a href="https://api.whatsapp.com/send/?phone=9601923020&"><i
+                                class="fa fa-whatsapp" aria-hidden="true"></a></i></div>
+                </div>
+            </div>
+            <div class="bg_information">
+
+                <div class="computer01">
+                    <div class="com1">
+                        <img src="image2/computer1.png">
+                    </div>
+                    <div class="com2">
+                        <img src="image2/computer2.png">
+                    </div>
+                </div>
+                <div class="text2">
+                    <ul>
+                        <li><a href="https://goo.gl/maps/MCD7xyRnD9ZgLX2R7"><i class="fa fa-map-marker"
+                                    aria-hidden="true"></i>
+                                <p>6 -7 ,Shivam Computer,
+                                    Devpriy<br> Complex,Motera Road,
+                                    Sabarmati, <br>Ahmedabad-380005</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="info@shivamcomputer.org">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <p class="box_bg_conttent_area pb-10"> info@shivamcomputeredu.com </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://shivamcomputer.org/">
+                                <i class="fa fa-globe"></i>
+                                <p> www.shivamcomputer.org </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <p>+91 96019 23020 </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://card1.shivamcomputer.org.in/.pdf">
+                                <button class="btn">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                    <h2> Download pdf</h2>
+                                </button>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="bg_coding">
+                <div class="code">
+                    <img src="image2/com.jpg">
+                </div>
+            </div>
+            <div class="bg_bottom">
+                <div class="bottom">
+                    <img src="image2/bottom1.png">
+                    <div class="b2">
+                        <ul>
+                            <li>
+                                <a class="shadow_button" href="Shivam_Computer.vcf" download="">
+                                    <button class="btn2">
+                                        <i class="fa fa-download" aria-hidden="true"></i>
+                                        Add To Phone Book
+                                    </button>
+                                </a>
+                                <a class="shadow_button" onclick="openShareModal(this, `Link Connect`)"
+                                    href="">
+                                    <button class="btn3">
+                                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                        Share
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/intlTelInput.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/utils.min.js"></script>
+</body>
+
+</html>
+
+</html>
